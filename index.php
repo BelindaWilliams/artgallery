@@ -1,8 +1,13 @@
+<?php
+    require_once 'includes/db.php';
+    require_once 'includes/functions.php';
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="reset" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/mystyles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>artGallery</title>
 </head>
@@ -22,7 +27,10 @@
 <!--Main database section:-->
 <main class="main">
 
-    <!--(Database to be added in later task)-->
+    <?php
+        $allart = fetchDb($db);
+        echo formatAll($allart);
+    ?>
 
 </main>
 
