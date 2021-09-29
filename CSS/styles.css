@@ -74,12 +74,84 @@ img {
 button {
     background-color: transparent;
     border-style: none;
-    bottom: 40px;
     color: #6b1925;
     cursor: pointer;
-    font-size: 2rem;
     position: fixed;
-    right: 30px;
+    right: 20px;
+}
+
+.top-btn {
+    bottom: 40px;
+    font-size: 3rem;
+}
+
+.top-btn:hover {
+    color: #19256b;
+}
+
+.add-art {
+    bottom: 100px;
+    font-size: 3rem;
+}
+
+.add-art:hover {
+    color: #256b19;
+}
+
+.back {
+    font-size: 3rem;
+    top: 100px;
+}
+
+.back:hover {
+    color: #19256b;
+}
+
+.form {
+    padding: 0 20%;
+}
+
+.form form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    row-gap: 2rem;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.text-fields input {
+    width: 100%;
+}
+
+.form-buttons {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.form-buttons input {
+    background-color: #6b1925;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.form-buttons input:hover {
+    background-color: #19256b;
 }
 
 .footer {
@@ -87,4 +159,10 @@ button {
     color: #ffffff;
     opacity: 0.9;
     padding: 10px;
+    width: 100%;
+}
+
+.bottom {
+    bottom: 0;
+    position: fixed;
 }

@@ -28,6 +28,13 @@ require_once 'includes/functions.php';
     <h2>ARTWORKS</h2>
 </header>
 
+<!--Link to 'Add Artwork' page:-->
+<form action="addartwork.php">
+    <button class="add-art">
+        <i class="fas fa-plus-circle"></i>
+    </button>
+</form>
+
 <!--Main database section:-->
 <main class="main">
 
