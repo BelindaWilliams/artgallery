@@ -28,6 +28,10 @@
         </p>
     </div>
 
+    <div class="required-text">
+        <p>*Required<strong><abbr title="required" aria-label="*"></abbr></strong></p>
+    </div>
+
     <div class="form-buttons">
         <input class="refresh" type="reset" value="Refresh">
 

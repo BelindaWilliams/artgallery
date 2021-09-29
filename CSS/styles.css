@@ -117,7 +117,7 @@ button {
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 
 form p {
@@ -134,6 +134,10 @@ form p {
 
 .text-fields input {
     width: 100%;
+}
+
+.required-text {
+    font-style: italic;
 }
 
 .form-buttons {
