@@ -1,50 +1,54 @@
+<?php
+require_once 'includes/db.php';
+require_once 'includes/functions.php';
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="reset" href="normalize.css">
-    <link rel="stylesheet" href="CSS/mystyles.css">
+    <link rel="reset" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>artGallery</title>
 </head>
 
 <body>
+
+<!--Navigation bar with App Name:-->
 <nav class="nav-bar">
-    <p>Nav bar</p>
+    <h1>artGallery</h1>
 </nav>
 
-<header class="jumbotron">
-    <p>Jumbotron</p>
+<!--Page header:-->
+<header class="header">
+    <h2>ARTWORKS</h2>
 </header>
 
+<!--Main database section:-->
 <main class="main">
 
-<?php
+    <?php
+    $allart = fetchDb($db);
+    echo formatAll($allart);
+    ?>
 
-$db = new PDO('mysql:host=db; dbname=project02', 'root', 'password');
+</main>
 
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+<!--Back to top button:-->
+<form action="#top">
+    <button class="top-btn">
+        <i class="fas fa-chevron-circle-up"></i>
+    </button>
+</form>
 
-$query = $db->prepare("SELECT `artist`, `title` , `medium` , `size` FROM `artcollection`;");
+<!--Footer:-->
+<footer class="footer">
+    <p>&#169; artGallery 2021</p>
+</footer>
 
-$query->execute();
-
-$artcollection = $query->fetchAll();
-
-echo '<h2>ARTWORKS</h2>';
-echo '<ul>';
-foreach($artcollection as $artitem) {
-    echo '<li>';
-    echo $artitem['artist'] . '<br>' . $artitem['title'] . '<br>' . $artitem['medium'] . '<br>' . $artitem['size'] . '<br><br>';
-}
-echo '</ul>';
-
-?>
-
-	</main>
-
-	<footer class="footer">
-	  <p>&copy artGallery 2021</p>
-	</footer>
-	
 </body>
 </html>
