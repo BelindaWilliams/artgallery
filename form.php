@@ -4,12 +4,12 @@
     <div class="text-fields">
         <p>
             <label for="artist">Artist*:</label>
-            <input type="text" name="artist" id="artist" minlength="1" maxlength="255" aria-required="true">
+            <input type="text" name="artist" id="artist" maxlength="255" required>
         </p>
 
         <p>
             <label for="title">Title*:</label>
-            <input type="text" name="title" id="title" minlength="1" maxlength="255" aria-required="true">
+            <input type="text" name="title" id="title" maxlength="255" required>
         </p>
 
         <p>
@@ -29,13 +29,13 @@
     </div>
 
     <div class="required-text">
-        <p>*Required<strong><abbr title="required" aria-label="*"></abbr></strong></p>
+        <p>*Required</p>
     </div>
 
     <div class="form-buttons">
-        <input class="refresh" type="reset" value="Refresh">
+        <input type="reset" value="Refresh">
 
-        <input class="save" type="submit" value="Save and Return">
+        <input type="submit">
     </div>
 
 </form>

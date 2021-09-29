@@ -20,7 +20,7 @@
     <h2>ADD ARTWORKS</h2>
 </header>
 
-<form action="index.php">
+<form action="index.php" method="post">
     <button class="back">
         <i class="fas fa-chevron-circle-left"></i>
     </button>

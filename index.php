@@ -29,7 +29,7 @@ require_once 'includes/functions.php';
 </header>
 
 <!--Link to 'Add Artwork' page:-->
-<form action="addartwork.php">
+<form action="addartwork.php" method="post">
     <button class="add-art">
         <i class="fas fa-plus-circle"></i>
     </button>
