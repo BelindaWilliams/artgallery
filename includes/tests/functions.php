@@ -32,7 +32,13 @@ class functions extends TestCase
         $expected .= '<p class="size">giant</p>';
         $expected .= '</li>';
         $expected .= '</ul>';
-        $input = [['image' => '1.jpg', 'artist' => 'George', 'title' => 'Flower', 'medium' => 'cheese', 'size' => 'giant']];
+        $input = [[
+            'image' => '1.jpg',
+            'artist' => 'George',
+            'title' => 'Flower',
+            'medium' => 'cheese',
+            'size' => 'giant'
+        ]];
 
         //Act
         $result = formatAll($input);
