@@ -1,3 +1,3 @@
 # artgallery
 
-Database name: artgallery.sql
+Database name: artgallerydb.sql
