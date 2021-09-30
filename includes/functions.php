@@ -2,8 +2,11 @@
 
 function fetchDb(PDO $db): array
 {
-    $query = $db->prepare("SELECT `artist`, `title` , `medium` , `size` , `image` FROM `artcollection`
-    ORDER BY `artist`;");
+    $query = $db->prepare(
+        "SELECT `artist`, `title` , `medium` , `size` , `image` 
+        FROM `artcollection`
+        ORDER BY `artist`;"
+    );
     $query->execute();
     return $query->fetchAll();
 }
@@ -38,4 +41,14 @@ function getImagePath(string $imagePath): string
         $path = 'images/' . $imagePath;
     }
     return $path;
+}
+
+function addNewArt(PDO $db, array $newArt): bool
+{
+    $query = $db->prepare('INSERT INTO `artcollection`'
+        . ' (`artist`, `title`, `medium`, `size`, `image`)'
+        . ' VALUES (:artist, :title, :medium, :size, :image);'
+    );
+
+	return $query->execute($newArt);
 }
