@@ -1,4 +1,3 @@
-
 <form action="newart.php" method="POST">
 
     <div class="text-fields">

@@ -99,18 +99,4 @@ class functions extends TestCase
         //Assert
         $this->assertEquals($expected, $result);
     }
-
-
-//    public function testAddNewArtSuccess()
-//    {
-//        //Arrange
-//        $expected = '';
-//        $input = '';
-//
-//        //Act
-//        $result = addNewArt($input);
-//
-//        //Assert
-//        $this->assertEquals($expected, $result);
-//    }
 }
