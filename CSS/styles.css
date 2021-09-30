@@ -57,9 +57,9 @@ li {
 
 img {
     height: auto;
-    width: auto;
     max-width: 200px;
     max-height: 200px;
+    width: auto;
 }
 
 .artist {
@@ -141,8 +141,8 @@ form p {
 }
 
 .form-buttons {
-    display: flex;
     column-gap: 2rem;
+    display: flex;
     justify-content: center;
 }
 
