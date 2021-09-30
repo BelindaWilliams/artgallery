@@ -6,8 +6,8 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.35)
-# Database: project02
-# Generation Time: 2021-09-28 08:57:47 +0000
+# Database: artgallerydb
+# Generation Time: 2021-09-30 08:21:19 +0000
 # ************************************************************
 
 
@@ -45,7 +45,7 @@ VALUES
 	(2,'Rosemary Gray','St Thomas Beckett Church, Box','watercolour on paper','22 x 33cm.','2.jpg'),
 	(3,'Rosemary Gray','Quiet Street, Bath','watercolour on paper','32 x 26cm.','3.jpg'),
 	(5,'Utagawa Hiroshige','Hodogaya: Entrance to Shinmachi, from the series The Fifty-three Stations of the Tokaido Road','woodblock print','20 x 32cm.','5.jpg'),
-	(6,'Unknown Artist','View of Pagoda','woodbloack print','22 x 17cm.','6.jpg'),
+	(6,'Unknown Artist','View of Pagoda','woodblock print','22 x 17cm.','6.jpg'),
 	(7,'Ed Collacott','Autumn Evening, Rhossilli','photograph','24 x 60cm.','7.jpg'),
 	(8,'B. Tomlinson','Lake District','watercolour on paper','25 x 35cm.','8.jpg'),
 	(9,'Gesso Yoshimoto','Sparrow on Bamboo in Snow','woodblock print','24 x 12.5cm.','9.jpg'),
