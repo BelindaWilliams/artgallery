@@ -30,7 +30,7 @@ require_once 'includes/functions.php';
 
 <!--Link to 'Add Artwork' page:-->
 <form action="addartwork.php" method="post">
-    <button class="add-art">
+    <button class="add-art" title="Add Artwork">
         <i class="fas fa-plus-circle"></i>
     </button>
 </form>
@@ -47,7 +47,7 @@ require_once 'includes/functions.php';
 
 <!--Back to top button:-->
 <form action="#top">
-    <button class="top-btn">
+    <button class="top-btn" title="Back to Top">
         <i class="fas fa-chevron-circle-up"></i>
     </button>
 </form>
